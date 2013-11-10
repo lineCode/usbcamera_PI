@@ -19,6 +19,7 @@ SET(CMAKE_C_INCLUDE_PATH
   "/usr/include/coil-1.1"
   "/usr/include/openrtm-1.1"
   "/usr/include/openrtm-1.1/rtm/idl"
+  "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 SET(CMAKE_Fortran_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})

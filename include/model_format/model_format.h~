@@ -20,7 +20,6 @@
 #include <rtm/idl/InterfaceDataTypesSkel.h>
 #include <iostream>
 #include "opencv2/opencv.hpp"
-#include "hi_conversion.h"
 // Service implementation headers
 // <rtc-template block="service_impl_h">
 

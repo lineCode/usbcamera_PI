@@ -1,0 +1,41 @@
+#include <rtm/Manager.h>
+#include <rtm/DataFlowComponentBase.h>
+#include <rtm/CorbaPort.h>
+#include <rtm/DataInPort.h>
+#include <rtm/DataOutPort.h>
+#include <rtm/idl/BasicDataTypeSkel.h>
+#include <rtm/idl/ExtendedDataTypesSkel.h>
+#include <rtm/idl/InterfaceDataTypesSkel.h>
+#include <iostream>
+
+#include <opencv2/opencv.hpp>
+#include <mclmcrrt.h>
+#include <mclcppclass.h>
+
+
+
+// 
+
+
+
+#ifndef TEMPLATE_H
+#define TEMPLATE_H
+
+
+// RTC::CameraImage ‚©‚ç cv::Mat ‚Ö‚Ì•ÏŠ·
+cv::Mat operator>>(const RTC::CameraImage src, cv::Mat& dst);
+cv::Mat operator<<(cv::Mat& dst, const RTC::CameraImage src);
+
+// cv::Mat ‚©‚ç RTC::CameraImage ‚Ö‚Ì•ÏŠ·
+RTC::CameraImage operator>>(const cv::Mat src, RTC::CameraImage& dst);
+RTC::CameraImage operator<<(RTC::CameraImage& dst, const cv::Mat src);
+
+// mwArray ‚©‚ç cv::Mat ‚Ö‚Ì•ÏŠ·
+cv::Mat operator>>(const mwArray src, cv::Mat& dst);
+cv::Mat operator<<(cv::Mat& dst, const mwArray src);
+
+// cv::Mat ‚©‚ç mwArray ‚Ö‚Ì•ÏŠ·
+mwArray operator>>(const cv::Mat src, mwArray& dst);
+mwArray operator<<(mwArray& dst, const cv::Mat src);
+
+#endif // TEMPLATE_H

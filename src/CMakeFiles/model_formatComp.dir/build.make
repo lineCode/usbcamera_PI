@@ -92,16 +92,41 @@ src/CMakeFiles/model_formatComp.dir/model_format.cpp.o.provides: src/CMakeFiles/
 
 src/CMakeFiles/model_formatComp.dir/model_format.cpp.o.provides.build: src/CMakeFiles/model_formatComp.dir/model_format.cpp.o
 
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o: src/CMakeFiles/model_formatComp.dir/flags.make
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o: src/hi_conversion.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/model_format/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o"
+	cd /home/hi-brain/workspace/model_format/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o -c /home/hi-brain/workspace/model_format/src/hi_conversion.cpp
+
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/model_formatComp.dir/hi_conversion.cpp.i"
+	cd /home/hi-brain/workspace/model_format/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/workspace/model_format/src/hi_conversion.cpp > CMakeFiles/model_formatComp.dir/hi_conversion.cpp.i
+
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/model_formatComp.dir/hi_conversion.cpp.s"
+	cd /home/hi-brain/workspace/model_format/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/workspace/model_format/src/hi_conversion.cpp -o CMakeFiles/model_formatComp.dir/hi_conversion.cpp.s
+
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.requires:
+.PHONY : src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.requires
+
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.provides: src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.provides.build
+.PHONY : src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.provides
+
+src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.provides.build: src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o
+
 # Object files for target model_formatComp
 model_formatComp_OBJECTS = \
 "CMakeFiles/model_formatComp.dir/model_formatComp.cpp.o" \
-"CMakeFiles/model_formatComp.dir/model_format.cpp.o"
+"CMakeFiles/model_formatComp.dir/model_format.cpp.o" \
+"CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o"
 
 # External object files for target model_formatComp
 model_formatComp_EXTERNAL_OBJECTS =
 
 src/model_formatComp: src/CMakeFiles/model_formatComp.dir/model_formatComp.cpp.o
 src/model_formatComp: src/CMakeFiles/model_formatComp.dir/model_format.cpp.o
+src/model_formatComp: src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o
 src/model_formatComp: /usr/local/opencv2.4.5/lib/libopencv_calib3d.so
 src/model_formatComp: /usr/local/opencv2.4.5/lib/libopencv_contrib.so
 src/model_formatComp: /usr/local/opencv2.4.5/lib/libopencv_core.so
@@ -131,6 +156,7 @@ src/CMakeFiles/model_formatComp.dir/build: src/model_formatComp
 
 src/CMakeFiles/model_formatComp.dir/requires: src/CMakeFiles/model_formatComp.dir/model_formatComp.cpp.o.requires
 src/CMakeFiles/model_formatComp.dir/requires: src/CMakeFiles/model_formatComp.dir/model_format.cpp.o.requires
+src/CMakeFiles/model_formatComp.dir/requires: src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o.requires
 .PHONY : src/CMakeFiles/model_formatComp.dir/requires
 
 src/CMakeFiles/model_formatComp.dir/clean:

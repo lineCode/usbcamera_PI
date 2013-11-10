@@ -184,6 +184,33 @@ model_formatComp/fast:
 	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/build
 .PHONY : model_formatComp/fast
 
+hi_conversion.o: hi_conversion.cpp.o
+.PHONY : hi_conversion.o
+
+# target to build an object file
+hi_conversion.cpp.o:
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.o
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o
+.PHONY : hi_conversion.cpp.o
+
+hi_conversion.i: hi_conversion.cpp.i
+.PHONY : hi_conversion.i
+
+# target to preprocess a source file
+hi_conversion.cpp.i:
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.i
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.i
+.PHONY : hi_conversion.cpp.i
+
+hi_conversion.s: hi_conversion.cpp.s
+.PHONY : hi_conversion.s
+
+# target to generate assembly for a file
+hi_conversion.cpp.s:
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.s
+	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.s
+.PHONY : hi_conversion.cpp.s
+
 model_format.o: model_format.cpp.o
 .PHONY : model_format.o
 
@@ -251,6 +278,9 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... hi_conversion.o"
+	@echo "... hi_conversion.i"
+	@echo "... hi_conversion.s"
 	@echo "... model_format.o"
 	@echo "... model_format.i"
 	@echo "... model_format.s"

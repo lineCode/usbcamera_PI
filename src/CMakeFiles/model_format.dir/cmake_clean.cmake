@@ -1,5 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/model_format.dir/model_format.cpp.o"
+  "CMakeFiles/model_format.dir/hi_conversion.cpp.o"
   "model_format.pdb"
   "model_format.so"
 )

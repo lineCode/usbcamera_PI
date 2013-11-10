@@ -1,5 +1,31 @@
-set(comp_srcs model_format.cpp )
+set(comp_srcs model_format.cpp hi_conversion.cpp)
 set(standalone_srcs model_formatComp.cpp)
+
+#hi
+set(MATLAB_INCLUDE_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include;") #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")
+set(MATLAB_LIBRARY_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/runtime/glnxa64;" "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/bin/glnxa64;")
+ #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")
+set(matlib libmwmclmcrrt.so)
+if (DEFINED MATLAB_INCLUDE_DIRS)
+  string(REGEX REPLACE "-I" ";"
+    MATLAB_INCLUDE_DIRS "${MATLAB_INCLUDE_DIRS}")
+  string(REGEX REPLACE " ;" ";"
+    MATLAB_INCLUDE_DIRS "${MATLAB_INCLUDE_DIRS}")
+endif (DEFINED MATLAB_INCLUDE_DIRS)
+if (DEFINED MATLAB_LIBRARY_DIRS)
+  string(REGEX REPLACE "-L" ";"
+    MATLAB_LIBRARY_DIRS "${MATLAB_LIBRARY_DIRS}")
+  string(REGEX REPLACE " ;" ";"
+    MATLAB_LIBRARY_DIRS "${MATLAB_LIBRARY_DIRS}")
+endif (DEFINED MATLAB_LIBRARY_DIRS)
+if (DEFINED matlib)
+  string(REGEX REPLACE "-l" ";"
+    matlib "${matlib}")
+  string(REGEX REPLACE " ;" ";"
+    matlib "${matlib}")
+endif (DEFINED matlib)
+
+
 find_package(OpenCV REQUIRED)
 if (DEFINED OPENRTM_INCLUDE_DIRS)
   string(REGEX REPLACE "-I" ";"
@@ -28,6 +54,10 @@ include_directories(${PROJECT_BINARY_DIR})
 include_directories(${PROJECT_BINARY_DIR}/idl)
 include_directories(${OPENRTM_INCLUDE_DIRS})
 include_directories(${OMNIORB_INCLUDE_DIRS})
+
+#hi-brain
+include_directories(${MATLAB_INCLUDE_DIRS})
+
 add_definitions(${OPENRTM_CFLAGS})
 add_definitions(${OMNIORB_CFLAGS})
 
@@ -36,16 +66,20 @@ MAP_ADD_STR(comp_hdrs "../" comp_headers)
 link_directories(${OPENRTM_LIBRARY_DIRS})
 link_directories(${OMNIORB_LIBRARY_DIRS})
 
+#hi-brain
+link_directories(${MATLAB_LIBRARY_DIRS})
+
+
 add_library(${PROJECT_NAME} ${LIB_TYPE} ${comp_srcs}
   ${comp_headers} ${ALL_IDL_SRCS})
 set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "")
 set_source_files_properties(${ALL_IDL_SRCS} PROPERTIES GENERATED 1)
 add_dependencies(${PROJECT_NAME} ALL_IDL_TGT)
-target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME} ${OPENRTM_LIBRARIES} ${OpenCV_LIBS} ${matlib})
 
 add_executable(${PROJECT_NAME}Comp ${standalone_srcs}
   ${comp_srcs} ${comp_headers} ${ALL_IDL_SRCS})
-target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(${PROJECT_NAME}Comp ${OPENRTM_LIBRARIES} ${OpenCV_LIBS} ${matlib})
 
 install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}Comp
     EXPORT ${PROJECT_NAME}
