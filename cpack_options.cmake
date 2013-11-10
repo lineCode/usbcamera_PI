@@ -1,12 +1,12 @@
-set(CPACK_PACKAGE_NAME "model_format")
+set(CPACK_PACKAGE_NAME "usbcamera")
 set(CPACK_PACKAGE_VERSION_MAJOR "1")
 set(CPACK_PACKAGE_VERSION_MINOR "0")
 set(CPACK_PACKAGE_VERSION_PATCH "0")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "ModuleDescription")
 set(CPACK_PACKAGE_VENDOR "kazuki urabe")
-set(CPACK_PACKAGE_INSTALL_DIRECTORY "model_format100")
-set(CPACK_PACKAGE_FILE_NAME "model_format-1.0.0")
-set(CPACK_RESOURCE_FILE_LICENSE "/home/hi-brain/workspace/model_format/COPYING.LESSER")
+set(CPACK_PACKAGE_INSTALL_DIRECTORY "usbcamera100")
+set(CPACK_PACKAGE_FILE_NAME "usbcamera-1.0.0")
+set(CPACK_RESOURCE_FILE_LICENSE "/home/hi-brain/sample/usbcamera/COPYING.LESSER")
 
 set(CPACK_COMPONENTS_ALL component)
 set(CPACK_COMPONENT_COMPONENT_DISPLAY_NAME "Applications")
@@ -53,42 +53,42 @@ IF (WIN32)
 
     # Windows WiX package settings
 
-    set(CPACK_WIX_XSL "/home/hi-brain/workspace/model_format/wix.xsl")
+    set(CPACK_WIX_XSL "/home/hi-brain/sample/usbcamera/wix.xsl")
     set(CPACK_WIX_LANG "ja-jp")
     set(CPACK_RESOURCE_FILE_LICENSE
-        "/home/hi-brain/workspace/model_format/cmake/License.rtf")
+        "/home/hi-brain/sample/usbcamera/cmake/License.rtf")
     configure_file(
-        "/home/hi-brain/workspace/model_format/cmake/wix.xsl.in"
-        "/home/hi-brain/workspace/model_format/wix.xsl" @ONLY)
+        "/home/hi-brain/sample/usbcamera/cmake/wix.xsl.in"
+        "/home/hi-brain/sample/usbcamera/wix.xsl" @ONLY)
 
     set(CPACK_PACKAGE_FILE_NAME
-        "model_format100")
+        "usbcamera100")
 
 
     #
     #
     #
-    set(CPACK_NSIS_MUI_ICON "/home/hi-brain/workspace/model_format/cmake\\rt_middleware_logo.ico")
-    set(CPACK_NSIS_MUI_UNIICON "/home/hi-brain/workspace/model_format/cmake\\rt_middleware_logo.ico")
-    set(CPACK_PACKAGE_ICON "/home/hi-brain/workspace/model_format/cmake\\rt_middleware_logo.bmp")
+    set(CPACK_NSIS_MUI_ICON "/home/hi-brain/sample/usbcamera/cmake\\rt_middleware_logo.ico")
+    set(CPACK_NSIS_MUI_UNIICON "/home/hi-brain/sample/usbcamera/cmake\\rt_middleware_logo.ico")
+    set(CPACK_PACKAGE_ICON "/home/hi-brain/sample/usbcamera/cmake\\rt_middleware_logo.bmp")
     set(CPACK_NSIS_HELP_LINK "http://www.openrtm.org")
     set(CPACK_NSIS_URL_INFO_ABOUT "http://www.openrtm.org")
     set(CPACK_NSIS_MODIFY_PATH ON)
-    set(CPACK_PACKAGE_EXECUTABLES model_formatComp;model_formatComp)
+    set(CPACK_PACKAGE_EXECUTABLES usbcameraComp;usbcameraComp)
     if(INSTALL_DOCUMENTATION)
         set(CPACK_NSIS_MENU_LINKS
-            "/usr/local/share/doc/model_format-1/html/index.html"
+            "/usr/local/share/doc/usbcamera-1/html/index.html"
             "Component documentation")
     endif(INSTALL_DOCUMENTATION)
-    string(REPLACE "/model_format" "" install_prefix_root
+    string(REPLACE "/usbcamera" "" install_prefix_root
         "/usr/local")
     file(TO_NATIVE_PATH "${install_prefix_root}" install_prefix_root)
     set(CPACK_NSIS_INSTALL_ROOT "${install_prefix_root}")
     set(CPACK_NSIS_EXTRA_INSTALL_COMMANDS
-        "  Rename \"$INSTDIR\\share\\model_format-1\\model_format-config.cmake\" \"$INSTDIR\\model_format-config.cmake\"
-  Rename \"$INSTDIR\\share\\model_format-1\\model_format-config-version.cmake\" \"$INSTDIR\\model_format-config-version.cmake\"")
+        "  Rename \"$INSTDIR\\share\\usbcamera-1\\usbcamera-config.cmake\" \"$INSTDIR\\usbcamera-config.cmake\"
+  Rename \"$INSTDIR\\share\\usbcamera-1\\usbcamera-config-version.cmake\" \"$INSTDIR\\usbcamera-config-version.cmake\"")
     set(CPACK_NSIS_EXTRA_UNINSTALL_COMMANDS
-        "  Delete \"$INSTDIR\\model_format-config.cmake\"
-  Delete \"$INSTDIR\\model_format-config-version.cmake\"")
+        "  Delete \"$INSTDIR\\usbcamera-config.cmake\"
+  Delete \"$INSTDIR\\usbcamera-config-version.cmake\"")
 ENDIF (WIN32)
 

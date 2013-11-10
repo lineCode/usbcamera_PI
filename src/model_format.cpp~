@@ -152,8 +152,8 @@ RTC::ReturnCode_t model_format::onActivated(RTC::UniqueId ec_id)
 		prevflg = 0;
 		cout<<m_outputOut.getName()<<" viewer ON"<<endl;
 		cv::namedWindow(m_outputOut.getName(), CV_WINDOW_AUTOSIZE);
-*/	}
-
+	}
+*/
   return RTC::RTC_OK;
 }
 

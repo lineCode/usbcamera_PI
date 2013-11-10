@@ -1,5 +1,5 @@
-set(comp_srcs model_format.cpp hi_conversion.cpp)
-set(standalone_srcs model_formatComp.cpp)
+set(comp_srcs usbcamera.cpp hi_conversion.cpp)
+set(standalone_srcs usbcameraComp.cpp)
 
 #hi
 set(MATLAB_INCLUDE_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include;") #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")

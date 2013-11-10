@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 # Utility rule file for uninstall.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/hi-brain/workspace/model_format/uninstall_target.cmake
+	/usr/bin/cmake -P /home/hi-brain/sample/usbcamera/uninstall_target.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -58,6 +58,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

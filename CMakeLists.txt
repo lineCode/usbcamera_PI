@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-project(model_format)
+project(usbcamera)
 string(TOLOWER ${PROJECT_NAME} PROJECT_NAME_LOWER)
 include("${PROJECT_SOURCE_DIR}/cmake/utils.cmake")
-set(PROJECT_VERSION 1.0.0 CACHE STRING "model_format version")
+set(PROJECT_VERSION 1.0.0 CACHE STRING "usbcamera version")
 DISSECT_VERSION()
 set(PROJECT_DESCRIPTION "ModuleDescription")
 set(PROJECT_VENDOR "kazuki urabe")

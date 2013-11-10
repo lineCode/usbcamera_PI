@@ -1,4 +1,4 @@
-# Install script for directory: /home/hi-brain/workspace/model_format
+# Install script for directory: /home/hi-brain/sample/usbcamera
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/hi-brain/workspace/model_format/cmake/cmake_install.cmake")
-  INCLUDE("/home/hi-brain/workspace/model_format/doc/cmake_install.cmake")
-  INCLUDE("/home/hi-brain/workspace/model_format/idl/cmake_install.cmake")
-  INCLUDE("/home/hi-brain/workspace/model_format/include/cmake_install.cmake")
-  INCLUDE("/home/hi-brain/workspace/model_format/src/cmake_install.cmake")
+  INCLUDE("/home/hi-brain/sample/usbcamera/cmake/cmake_install.cmake")
+  INCLUDE("/home/hi-brain/sample/usbcamera/doc/cmake_install.cmake")
+  INCLUDE("/home/hi-brain/sample/usbcamera/idl/cmake_install.cmake")
+  INCLUDE("/home/hi-brain/sample/usbcamera/include/cmake_install.cmake")
+  INCLUDE("/home/hi-brain/sample/usbcamera/src/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -48,7 +48,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/hi-brain/workspace/model_format/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/hi-brain/sample/usbcamera/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/hi-brain/workspace/model_format/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/hi-brain/sample/usbcamera/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

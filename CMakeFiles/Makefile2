@@ -44,10 +44,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -56,15 +56,15 @@ CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/model_format/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles 
 	@echo "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -117,15 +117,15 @@ doc/preinstall:
 doc/CMakeFiles/doxygen_doc.dir/all:
 	$(MAKE) -f doc/CMakeFiles/doxygen_doc.dir/build.make doc/CMakeFiles/doxygen_doc.dir/depend
 	$(MAKE) -f doc/CMakeFiles/doxygen_doc.dir/build.make doc/CMakeFiles/doxygen_doc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/model_format/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles 
 	@echo "Built target doxygen_doc"
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/all
 
 # Build rule for subdir invocation for target.
 doc/CMakeFiles/doxygen_doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/CMakeFiles/doxygen_doc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/rule
 
 # Convenience name for target.
@@ -160,43 +160,43 @@ idl/preinstall:
 # Directory level rules for directory include
 
 # Convenience name for "all" pass in the directory.
-include/all: include/model_format/all
+include/all: include/usbcamera/all
 .PHONY : include/all
 
 # Convenience name for "clean" pass in the directory.
-include/clean: include/model_format/clean
+include/clean: include/usbcamera/clean
 .PHONY : include/clean
 
 # Convenience name for "preinstall" pass in the directory.
-include/preinstall: include/model_format/preinstall
+include/preinstall: include/usbcamera/preinstall
 .PHONY : include/preinstall
 
 #=============================================================================
-# Directory level rules for directory include/model_format
+# Directory level rules for directory include/usbcamera
 
 # Convenience name for "all" pass in the directory.
-include/model_format/all:
-.PHONY : include/model_format/all
+include/usbcamera/all:
+.PHONY : include/usbcamera/all
 
 # Convenience name for "clean" pass in the directory.
-include/model_format/clean:
-.PHONY : include/model_format/clean
+include/usbcamera/clean:
+.PHONY : include/usbcamera/clean
 
 # Convenience name for "preinstall" pass in the directory.
-include/model_format/preinstall:
-.PHONY : include/model_format/preinstall
+include/usbcamera/preinstall:
+.PHONY : include/usbcamera/preinstall
 
 #=============================================================================
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/model_format.dir/all
-src/all: src/CMakeFiles/model_formatComp.dir/all
+src/all: src/CMakeFiles/usbcamera.dir/all
+src/all: src/CMakeFiles/usbcameraComp.dir/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/model_format.dir/clean
-src/clean: src/CMakeFiles/model_formatComp.dir/clean
+src/clean: src/CMakeFiles/usbcamera.dir/clean
+src/clean: src/CMakeFiles/usbcameraComp.dir/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -204,73 +204,73 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/model_format.dir
+# Target rules for target src/CMakeFiles/usbcamera.dir
 
 # All Build rule for target.
-src/CMakeFiles/model_format.dir/all:
-	$(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/depend
-	$(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/model_format/CMakeFiles  1 2
-	@echo "Built target model_format"
-.PHONY : src/CMakeFiles/model_format.dir/all
+src/CMakeFiles/usbcamera.dir/all:
+	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/depend
+	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles  1 2
+	@echo "Built target usbcamera"
+.PHONY : src/CMakeFiles/usbcamera.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/model_format.dir/all
+all: src/CMakeFiles/usbcamera.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/model_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/model_format.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
-.PHONY : src/CMakeFiles/model_format.dir/rule
+src/CMakeFiles/usbcamera.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcamera.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+.PHONY : src/CMakeFiles/usbcamera.dir/rule
 
 # Convenience name for target.
-model_format: src/CMakeFiles/model_format.dir/rule
-.PHONY : model_format
+usbcamera: src/CMakeFiles/usbcamera.dir/rule
+.PHONY : usbcamera
 
 # clean rule for target.
-src/CMakeFiles/model_format.dir/clean:
-	$(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/clean
-.PHONY : src/CMakeFiles/model_format.dir/clean
+src/CMakeFiles/usbcamera.dir/clean:
+	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/clean
+.PHONY : src/CMakeFiles/usbcamera.dir/clean
 
 # clean rule for target.
-clean: src/CMakeFiles/model_format.dir/clean
+clean: src/CMakeFiles/usbcamera.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/model_formatComp.dir
+# Target rules for target src/CMakeFiles/usbcameraComp.dir
 
 # All Build rule for target.
-src/CMakeFiles/model_formatComp.dir/all:
-	$(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/depend
-	$(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/model_format/CMakeFiles  3 4 5
-	@echo "Built target model_formatComp"
-.PHONY : src/CMakeFiles/model_formatComp.dir/all
+src/CMakeFiles/usbcameraComp.dir/all:
+	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/depend
+	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles  3 4 5
+	@echo "Built target usbcameraComp"
+.PHONY : src/CMakeFiles/usbcameraComp.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/model_formatComp.dir/all
+all: src/CMakeFiles/usbcameraComp.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/model_formatComp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/model_formatComp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
-.PHONY : src/CMakeFiles/model_formatComp.dir/rule
+src/CMakeFiles/usbcameraComp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcameraComp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+.PHONY : src/CMakeFiles/usbcameraComp.dir/rule
 
 # Convenience name for target.
-model_formatComp: src/CMakeFiles/model_formatComp.dir/rule
-.PHONY : model_formatComp
+usbcameraComp: src/CMakeFiles/usbcameraComp.dir/rule
+.PHONY : usbcameraComp
 
 # clean rule for target.
-src/CMakeFiles/model_formatComp.dir/clean:
-	$(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/clean
-.PHONY : src/CMakeFiles/model_formatComp.dir/clean
+src/CMakeFiles/usbcameraComp.dir/clean:
+	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/clean
+.PHONY : src/CMakeFiles/usbcameraComp.dir/clean
 
 # clean rule for target.
-clean: src/CMakeFiles/model_formatComp.dir/clean
+clean: src/CMakeFiles/usbcameraComp.dir/clean
 .PHONY : clean
 
 #=============================================================================

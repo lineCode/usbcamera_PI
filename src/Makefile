@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/hi-brain/workspace/model_format && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/hi-brain/sample/usbcamera && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/hi-brain/workspace/model_format && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/workspace/model_format/CPackSourceConfig.cmake
+	cd /home/hi-brain/sample/usbcamera && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/sample/usbcamera/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,14 +127,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles /home/hi-brain/workspace/model_format/src/CMakeFiles/progress.marks
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles /home/hi-brain/sample/usbcamera/src/CMakeFiles/progress.marks
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,54 +143,54 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/model_format.dir/rule:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/model_format.dir/rule
-.PHONY : src/CMakeFiles/model_format.dir/rule
+src/CMakeFiles/usbcamera.dir/rule:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcamera.dir/rule
+.PHONY : src/CMakeFiles/usbcamera.dir/rule
 
 # Convenience name for target.
-model_format: src/CMakeFiles/model_format.dir/rule
-.PHONY : model_format
+usbcamera: src/CMakeFiles/usbcamera.dir/rule
+.PHONY : usbcamera
 
 # fast build rule for target.
-model_format/fast:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/build
-.PHONY : model_format/fast
+usbcamera/fast:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/build
+.PHONY : usbcamera/fast
 
 # Convenience name for target.
-src/CMakeFiles/model_formatComp.dir/rule:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/model_formatComp.dir/rule
-.PHONY : src/CMakeFiles/model_formatComp.dir/rule
+src/CMakeFiles/usbcameraComp.dir/rule:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcameraComp.dir/rule
+.PHONY : src/CMakeFiles/usbcameraComp.dir/rule
 
 # Convenience name for target.
-model_formatComp: src/CMakeFiles/model_formatComp.dir/rule
-.PHONY : model_formatComp
+usbcameraComp: src/CMakeFiles/usbcameraComp.dir/rule
+.PHONY : usbcameraComp
 
 # fast build rule for target.
-model_formatComp/fast:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/build
-.PHONY : model_formatComp/fast
+usbcameraComp/fast:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/build
+.PHONY : usbcameraComp/fast
 
 hi_conversion.o: hi_conversion.cpp.o
 .PHONY : hi_conversion.o
 
 # target to build an object file
 hi_conversion.cpp.o:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.o
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.o
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/hi_conversion.cpp.o
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o
 .PHONY : hi_conversion.cpp.o
 
 hi_conversion.i: hi_conversion.cpp.i
@@ -198,8 +198,8 @@ hi_conversion.i: hi_conversion.cpp.i
 
 # target to preprocess a source file
 hi_conversion.cpp.i:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.i
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.i
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/hi_conversion.cpp.i
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.i
 .PHONY : hi_conversion.cpp.i
 
 hi_conversion.s: hi_conversion.cpp.s
@@ -207,60 +207,60 @@ hi_conversion.s: hi_conversion.cpp.s
 
 # target to generate assembly for a file
 hi_conversion.cpp.s:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/hi_conversion.cpp.s
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/hi_conversion.cpp.s
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/hi_conversion.cpp.s
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.s
 .PHONY : hi_conversion.cpp.s
 
-model_format.o: model_format.cpp.o
-.PHONY : model_format.o
+usbcamera.o: usbcamera.cpp.o
+.PHONY : usbcamera.o
 
 # target to build an object file
-model_format.cpp.o:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/model_format.cpp.o
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_format.cpp.o
-.PHONY : model_format.cpp.o
+usbcamera.cpp.o:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/usbcamera.cpp.o
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o
+.PHONY : usbcamera.cpp.o
 
-model_format.i: model_format.cpp.i
-.PHONY : model_format.i
+usbcamera.i: usbcamera.cpp.i
+.PHONY : usbcamera.i
 
 # target to preprocess a source file
-model_format.cpp.i:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/model_format.cpp.i
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_format.cpp.i
-.PHONY : model_format.cpp.i
+usbcamera.cpp.i:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/usbcamera.cpp.i
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.i
+.PHONY : usbcamera.cpp.i
 
-model_format.s: model_format.cpp.s
-.PHONY : model_format.s
+usbcamera.s: usbcamera.cpp.s
+.PHONY : usbcamera.s
 
 # target to generate assembly for a file
-model_format.cpp.s:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/model_format.cpp.s
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_format.cpp.s
-.PHONY : model_format.cpp.s
+usbcamera.cpp.s:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/usbcamera.cpp.s
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.s
+.PHONY : usbcamera.cpp.s
 
-model_formatComp.o: model_formatComp.cpp.o
-.PHONY : model_formatComp.o
+usbcameraComp.o: usbcameraComp.cpp.o
+.PHONY : usbcameraComp.o
 
 # target to build an object file
-model_formatComp.cpp.o:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_formatComp.cpp.o
-.PHONY : model_formatComp.cpp.o
+usbcameraComp.cpp.o:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o
+.PHONY : usbcameraComp.cpp.o
 
-model_formatComp.i: model_formatComp.cpp.i
-.PHONY : model_formatComp.i
+usbcameraComp.i: usbcameraComp.cpp.i
+.PHONY : usbcameraComp.i
 
 # target to preprocess a source file
-model_formatComp.cpp.i:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_formatComp.cpp.i
-.PHONY : model_formatComp.cpp.i
+usbcameraComp.cpp.i:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.i
+.PHONY : usbcameraComp.cpp.i
 
-model_formatComp.s: model_formatComp.cpp.s
-.PHONY : model_formatComp.s
+usbcameraComp.s: usbcameraComp.cpp.s
+.PHONY : usbcameraComp.s
 
 # target to generate assembly for a file
-model_formatComp.cpp.s:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/model_formatComp.cpp.s
-.PHONY : model_formatComp.cpp.s
+usbcameraComp.cpp.s:
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.s
+.PHONY : usbcameraComp.cpp.s
 
 # Help Target
 help:
@@ -273,20 +273,20 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... model_format"
-	@echo "... model_formatComp"
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... usbcamera"
+	@echo "... usbcameraComp"
 	@echo "... hi_conversion.o"
 	@echo "... hi_conversion.i"
 	@echo "... hi_conversion.s"
-	@echo "... model_format.o"
-	@echo "... model_format.i"
-	@echo "... model_format.s"
-	@echo "... model_formatComp.o"
-	@echo "... model_formatComp.i"
-	@echo "... model_formatComp.s"
+	@echo "... usbcamera.o"
+	@echo "... usbcamera.i"
+	@echo "... usbcamera.s"
+	@echo "... usbcameraComp.o"
+	@echo "... usbcameraComp.i"
+	@echo "... usbcameraComp.s"
 .PHONY : help
 
 
@@ -298,6 +298,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

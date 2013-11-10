@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 # Utility rule file for doxygen_doc.
 
@@ -43,7 +43,7 @@ CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
 include doc/CMakeFiles/doxygen_doc.dir/progress.make
 
 doc/CMakeFiles/doxygen_doc:
-	cd /home/hi-brain/workspace/model_format/doc && /usr/bin/doxygen /home/hi-brain/workspace/model_format/doc/doxyfile
+	cd /home/hi-brain/sample/usbcamera/doc && /usr/bin/doxygen /home/hi-brain/sample/usbcamera/doc/doxyfile
 
 doxygen_doc: doc/CMakeFiles/doxygen_doc
 doxygen_doc: doc/CMakeFiles/doxygen_doc.dir/build.make
@@ -54,10 +54,10 @@ doc/CMakeFiles/doxygen_doc.dir/build: doxygen_doc
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/build
 
 doc/CMakeFiles/doxygen_doc.dir/clean:
-	cd /home/hi-brain/workspace/model_format/doc && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_doc.dir/cmake_clean.cmake
+	cd /home/hi-brain/sample/usbcamera/doc && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_doc.dir/cmake_clean.cmake
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/clean
 
 doc/CMakeFiles/doxygen_doc.dir/depend:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format/doc /home/hi-brain/workspace/model_format /home/hi-brain/workspace/model_format/doc /home/hi-brain/workspace/model_format/doc/CMakeFiles/doxygen_doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/doc /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/doc /home/hi-brain/sample/usbcamera/doc/CMakeFiles/doxygen_doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/depend
 

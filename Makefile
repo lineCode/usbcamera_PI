@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/workspace/model_format/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/sample/usbcamera/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,9 +127,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles /home/hi-brain/workspace/model_format/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles /home/hi-brain/sample/usbcamera/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -183,30 +183,30 @@ doxygen_doc/fast:
 .PHONY : doxygen_doc/fast
 
 #=============================================================================
-# Target rules for targets named model_format
+# Target rules for targets named usbcamera
 
 # Build rule for target.
-model_format: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 model_format
-.PHONY : model_format
+usbcamera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usbcamera
+.PHONY : usbcamera
 
 # fast build rule for target.
-model_format/fast:
-	$(MAKE) -f src/CMakeFiles/model_format.dir/build.make src/CMakeFiles/model_format.dir/build
-.PHONY : model_format/fast
+usbcamera/fast:
+	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/build
+.PHONY : usbcamera/fast
 
 #=============================================================================
-# Target rules for targets named model_formatComp
+# Target rules for targets named usbcameraComp
 
 # Build rule for target.
-model_formatComp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 model_formatComp
-.PHONY : model_formatComp
+usbcameraComp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 usbcameraComp
+.PHONY : usbcameraComp
 
 # fast build rule for target.
-model_formatComp/fast:
-	$(MAKE) -f src/CMakeFiles/model_formatComp.dir/build.make src/CMakeFiles/model_formatComp.dir/build
-.PHONY : model_formatComp/fast
+usbcameraComp/fast:
+	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/build
+.PHONY : usbcameraComp/fast
 
 # Help Target
 help:
@@ -224,8 +224,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
 	@echo "... doxygen_doc"
-	@echo "... model_format"
-	@echo "... model_formatComp"
+	@echo "... usbcamera"
+	@echo "... usbcameraComp"
 .PHONY : help
 
 

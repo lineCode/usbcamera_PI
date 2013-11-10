@@ -1,4 +1,4 @@
-/home/hi-brain/workspace/model_format/doc/CMakeFiles/doxygen_doc.dir
-/home/hi-brain/workspace/model_format/src/CMakeFiles/model_format.dir
-/home/hi-brain/workspace/model_format/src/CMakeFiles/model_formatComp.dir
-/home/hi-brain/workspace/model_format/CMakeFiles/uninstall.dir
+/home/hi-brain/sample/usbcamera/doc/CMakeFiles/doxygen_doc.dir
+/home/hi-brain/sample/usbcamera/CMakeFiles/uninstall.dir
+/home/hi-brain/sample/usbcamera/src/CMakeFiles/usbcamera.dir
+/home/hi-brain/sample/usbcamera/src/CMakeFiles/usbcameraComp.dir

@@ -36,10 +36,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/workspace/model_format
+CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/workspace/model_format
+CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -98,7 +98,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/hi-brain/workspace/model_format && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/hi-brain/sample/usbcamera && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -108,7 +108,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/hi-brain/workspace/model_format && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/workspace/model_format/CPackSourceConfig.cmake
+	cd /home/hi-brain/sample/usbcamera && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/hi-brain/sample/usbcamera/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -127,14 +127,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles /home/hi-brain/workspace/model_format/cmake/CMakeFiles/progress.marks
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 cmake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/model_format/CMakeFiles 0
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles /home/hi-brain/sample/usbcamera/cmake/CMakeFiles/progress.marks
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 cmake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 cmake/clean
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 cmake/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,17 +143,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 cmake/preinstall
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 cmake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hi-brain/workspace/model_format && $(MAKE) -f CMakeFiles/Makefile2 cmake/preinstall
+	cd /home/hi-brain/sample/usbcamera && $(MAKE) -f CMakeFiles/Makefile2 cmake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -181,6 +181,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hi-brain/workspace/model_format && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

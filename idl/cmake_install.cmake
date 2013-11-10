@@ -1,4 +1,4 @@
-# Install script for directory: /home/hi-brain/workspace/model_format/idl
+# Install script for directory: /home/hi-brain/sample/usbcamera/idl
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
