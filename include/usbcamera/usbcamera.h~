@@ -282,7 +282,7 @@ class usbcamera
 cv::VideoCapture videoCapture;	//カメラ用メモリ
 cv::Mat outputFrame;
 int count;
-coil::TimeValue tm_pre;
+
 int prevflg;
 //bool SizeChange(const RTC::CameraImage img, const cv::Mat src);
 void switch_viewer(const cv::Mat& src, const std::string name, int& prev, const int curr);

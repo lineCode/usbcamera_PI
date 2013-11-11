@@ -133,7 +133,7 @@ RTC::ReturnCode_t usbcamera::onDeactivated(RTC::UniqueId ec_id)
 	videoCapture.release();
 
 	outputFrame.release();
-	count = 0;
+
 	switch_viewer(outputFrame, m_outputOut.getName(), prevflg, 0);
   return RTC::RTC_OK;
 }

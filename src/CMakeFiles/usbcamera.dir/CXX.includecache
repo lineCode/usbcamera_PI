@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/hi-brain/sample/usbcamera/src/hi_conversion.cpp
-hi_conversion.h
-/home/hi-brain/sample/usbcamera/src/hi_conversion.h
-
 /home/hi-brain/sample/usbcamera/src/usbcamera.cpp
 usbcamera.h
 /home/hi-brain/sample/usbcamera/src/usbcamera.h
