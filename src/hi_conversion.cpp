@@ -3,7 +3,7 @@
 cv::Mat operator>>(const RTC::CameraImage src, cv::Mat& dst)
 {
 	if(dst.empty()){
-		if(src.width*src.height == src.pixels.length())
+		if((unsigned)src.width*src.height == src.pixels.length())
 			dst.create(cvSize(src.width,src.height),src.bpp);
 	}
 	if(dst.size().height != src.height || dst.size().width != src.width || dst.type() != src.bpp || dst.size().height * dst.size().width * dst.elemSize() != (int)src.pixels.length())
@@ -109,6 +109,10 @@ cv::Mat operator>>(const mwArray src, cv::Mat& dst)
 		cv_src.create(cvSize(src_height,src_width),CV_64F);
 		src.GetData((mxDouble*)cv_src.data,src_width*src_height);
 		break;
+	default:
+		std::cerr << "hi_converison:not handled format" << std::endl;
+		exit(1);	
+		break;
 	}
 
 
@@ -182,6 +186,8 @@ mwArray operator>>(const cv::Mat src, mwArray& dst){
 			dst = mwArray(src.size().height,src.size().width,mxDOUBLE_CLASS);
 		dst.SetData((double*)src_t.data,src_t.size().width*src_t.size().height);
 		break;
+	default:
+		break;	
 	}
 
 	return dst;

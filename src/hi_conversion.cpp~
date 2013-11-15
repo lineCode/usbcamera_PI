@@ -3,7 +3,7 @@
 cv::Mat operator>>(const RTC::CameraImage src, cv::Mat& dst)
 {
 	if(dst.empty()){
-		if(src.width*src.height == src.pixels.length())
+		if((unsigned)src.width*src.height == src.pixels.length())
 			dst.create(cvSize(src.width,src.height),src.bpp);
 	}
 	if(dst.size().height != src.height || dst.size().width != src.width || dst.type() != src.bpp || dst.size().height * dst.size().width * dst.elemSize() != (int)src.pixels.length())
@@ -41,7 +41,7 @@ RTC::CameraImage operator<<(RTC::CameraImage& dst, const cv::Mat src)
 	return src>>dst;
 }
 
-/*
+
 cv::Mat operator>>(const mwArray src, cv::Mat& dst)
 {
 	mwArray size = src.GetDimensions();
@@ -192,4 +192,3 @@ mwArray operator<<(mwArray& dst, const cv::Mat src){
 	return src>>dst;
 }
 
-*/
