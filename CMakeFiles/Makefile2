@@ -43,11 +43,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_SOURCE_DIR = /home/hi-brain/workspace/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_BINARY_DIR = /home/hi-brain/workspace/usbcamera
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir
@@ -56,15 +62,15 @@ CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles 
 	@echo "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -117,15 +123,15 @@ doc/preinstall:
 doc/CMakeFiles/doxygen_doc.dir/all:
 	$(MAKE) -f doc/CMakeFiles/doxygen_doc.dir/build.make doc/CMakeFiles/doxygen_doc.dir/depend
 	$(MAKE) -f doc/CMakeFiles/doxygen_doc.dir/build.make doc/CMakeFiles/doxygen_doc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles 
 	@echo "Built target doxygen_doc"
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/all
 
 # Build rule for subdir invocation for target.
 doc/CMakeFiles/doxygen_doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/CMakeFiles/doxygen_doc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 .PHONY : doc/CMakeFiles/doxygen_doc.dir/rule
 
 # Convenience name for target.
@@ -210,7 +216,7 @@ src/preinstall:
 src/CMakeFiles/usbcamera.dir/all:
 	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/depend
 	$(MAKE) -f src/CMakeFiles/usbcamera.dir/build.make src/CMakeFiles/usbcamera.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles  1 2
 	@echo "Built target usbcamera"
 .PHONY : src/CMakeFiles/usbcamera.dir/all
 
@@ -220,9 +226,9 @@ all: src/CMakeFiles/usbcamera.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/usbcamera.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcamera.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 .PHONY : src/CMakeFiles/usbcamera.dir/rule
 
 # Convenience name for target.
@@ -245,7 +251,7 @@ clean: src/CMakeFiles/usbcamera.dir/clean
 src/CMakeFiles/usbcameraComp.dir/all:
 	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/depend
 	$(MAKE) -f src/CMakeFiles/usbcameraComp.dir/build.make src/CMakeFiles/usbcameraComp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles  3 4 5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles  3 4 5
 	@echo "Built target usbcameraComp"
 .PHONY : src/CMakeFiles/usbcameraComp.dir/all
 
@@ -255,9 +261,9 @@ all: src/CMakeFiles/usbcameraComp.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/usbcameraComp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/usbcameraComp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/sample/usbcamera/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hi-brain/workspace/usbcamera/CMakeFiles 0
 .PHONY : src/CMakeFiles/usbcameraComp.dir/rule
 
 # Convenience name for target.

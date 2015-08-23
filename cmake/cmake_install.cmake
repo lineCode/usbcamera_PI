@@ -1,4 +1,4 @@
-# Install script for directory: /home/hi-brain/sample/usbcamera/cmake
+# Install script for directory: /home/hi-brain/workspace/usbcamera/cmake
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "component")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/components/lib/pkgconfig" TYPE FILE FILES "/home/hi-brain/sample/usbcamera/cmake/usbcamera.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/components/lib/pkgconfig" TYPE FILE FILES "/home/hi-brain/workspace/usbcamera/cmake/usbcamera.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "component")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "library")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/components/share/usbcamera-1" TYPE FILE FILES
-    "/home/hi-brain/sample/usbcamera/cmake/usbcamera-config.cmake"
-    "/home/hi-brain/sample/usbcamera/cmake/usbcamera-config-version.cmake"
+    "/home/hi-brain/workspace/usbcamera/cmake/usbcamera-config.cmake"
+    "/home/hi-brain/workspace/usbcamera/cmake/usbcamera-config-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "library")
 

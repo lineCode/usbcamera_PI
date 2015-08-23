@@ -31,11 +31,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_SOURCE_DIR = /home/hi-brain/workspace/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_BINARY_DIR = /home/hi-brain/workspace/usbcamera
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/usbcameraComp.dir/depend.make
@@ -48,17 +54,17 @@ include src/CMakeFiles/usbcameraComp.dir/flags.make
 
 src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o: src/CMakeFiles/usbcameraComp.dir/flags.make
 src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o: src/usbcameraComp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o -c /home/hi-brain/sample/usbcamera/src/usbcameraComp.cpp
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o -c /home/hi-brain/workspace/usbcamera/src/usbcameraComp.cpp
 
 src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.i"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/sample/usbcamera/src/usbcameraComp.cpp > CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.i
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/workspace/usbcamera/src/usbcameraComp.cpp > CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.i
 
 src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.s"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/sample/usbcamera/src/usbcameraComp.cpp -o CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.s
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/workspace/usbcamera/src/usbcameraComp.cpp -o CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.s
 
 src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o.requires:
 .PHONY : src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o.requires
@@ -71,17 +77,17 @@ src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o: src/CMakeFiles/usbcameraComp.dir/flags.make
 src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o: src/usbcamera.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o -c /home/hi-brain/sample/usbcamera/src/usbcamera.cpp
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o -c /home/hi-brain/workspace/usbcamera/src/usbcamera.cpp
 
 src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usbcameraComp.dir/usbcamera.cpp.i"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/sample/usbcamera/src/usbcamera.cpp > CMakeFiles/usbcameraComp.dir/usbcamera.cpp.i
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/workspace/usbcamera/src/usbcamera.cpp > CMakeFiles/usbcameraComp.dir/usbcamera.cpp.i
 
 src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usbcameraComp.dir/usbcamera.cpp.s"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/sample/usbcamera/src/usbcamera.cpp -o CMakeFiles/usbcameraComp.dir/usbcamera.cpp.s
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/workspace/usbcamera/src/usbcamera.cpp -o CMakeFiles/usbcameraComp.dir/usbcamera.cpp.s
 
 src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o.requires:
 .PHONY : src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o.requires
@@ -94,17 +100,17 @@ src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o: src/CMakeFiles/usbcameraComp.dir/flags.make
 src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o: src/hi_conversion.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/sample/usbcamera/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hi-brain/workspace/usbcamera/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o -c /home/hi-brain/sample/usbcamera/src/hi_conversion.cpp
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o -c /home/hi-brain/workspace/usbcamera/src/hi_conversion.cpp
 
 src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.i"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/sample/usbcamera/src/hi_conversion.cpp > CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.i
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/hi-brain/workspace/usbcamera/src/hi_conversion.cpp > CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.i
 
 src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.s"
-	cd /home/hi-brain/sample/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/sample/usbcamera/src/hi_conversion.cpp -o CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.s
+	cd /home/hi-brain/workspace/usbcamera/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/hi-brain/workspace/usbcamera/src/hi_conversion.cpp -o CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.s
 
 src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o.requires:
 .PHONY : src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o.requires
@@ -127,28 +133,43 @@ usbcameraComp_EXTERNAL_OBJECTS =
 src/usbcameraComp: src/CMakeFiles/usbcameraComp.dir/usbcameraComp.cpp.o
 src/usbcameraComp: src/CMakeFiles/usbcameraComp.dir/usbcamera.cpp.o
 src/usbcameraComp: src/CMakeFiles/usbcameraComp.dir/hi_conversion.cpp.o
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_calib3d.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_contrib.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_core.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_features2d.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_flann.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_gpu.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_highgui.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_imgproc.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_legacy.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_ml.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_nonfree.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_objdetect.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_photo.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_stitching.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_superres.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_ts.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_video.so
-src/usbcameraComp: /usr/local/opencv2.4.5/lib/libopencv_videostab.so
 src/usbcameraComp: src/CMakeFiles/usbcameraComp.dir/build.make
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_videostab.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_video.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_ts.a
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_superres.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_stitching.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_photo.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_ocl.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_objdetect.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_nonfree.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_ml.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_legacy.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_imgproc.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_highgui.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_gpu.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_flann.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_features2d.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_core.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_contrib.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_calib3d.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_nonfree.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_ocl.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_gpu.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_photo.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_objdetect.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_legacy.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_video.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_ml.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_calib3d.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_features2d.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_highgui.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_imgproc.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_flann.so.2.4.10
+src/usbcameraComp: /usr/local/opencv2.4.10/lib/libopencv_core.so.2.4.10
 src/usbcameraComp: src/CMakeFiles/usbcameraComp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable usbcameraComp"
-	cd /home/hi-brain/sample/usbcamera/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usbcameraComp.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/hi-brain/workspace/usbcamera/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/usbcameraComp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/usbcameraComp.dir/build: src/usbcameraComp
@@ -160,10 +181,10 @@ src/CMakeFiles/usbcameraComp.dir/requires: src/CMakeFiles/usbcameraComp.dir/hi_c
 .PHONY : src/CMakeFiles/usbcameraComp.dir/requires
 
 src/CMakeFiles/usbcameraComp.dir/clean:
-	cd /home/hi-brain/sample/usbcamera/src && $(CMAKE_COMMAND) -P CMakeFiles/usbcameraComp.dir/cmake_clean.cmake
+	cd /home/hi-brain/workspace/usbcamera/src && $(CMAKE_COMMAND) -P CMakeFiles/usbcameraComp.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/usbcameraComp.dir/clean
 
 src/CMakeFiles/usbcameraComp.dir/depend:
-	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/src /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/src /home/hi-brain/sample/usbcamera/src/CMakeFiles/usbcameraComp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hi-brain/workspace/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera/src /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera/src /home/hi-brain/workspace/usbcamera/src/CMakeFiles/usbcameraComp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/usbcameraComp.dir/depend
 

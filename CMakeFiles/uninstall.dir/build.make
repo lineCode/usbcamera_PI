@@ -31,11 +31,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_SOURCE_DIR = /home/hi-brain/workspace/usbcamera
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
+CMAKE_BINARY_DIR = /home/hi-brain/workspace/usbcamera
 
 # Utility rule file for uninstall.
 
@@ -43,7 +49,7 @@ CMAKE_BINARY_DIR = /home/hi-brain/sample/usbcamera
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/hi-brain/sample/usbcamera/uninstall_target.cmake
+	/usr/bin/cmake -P /home/hi-brain/workspace/usbcamera/uninstall_target.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -58,6 +64,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/hi-brain/sample/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera /home/hi-brain/sample/usbcamera/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hi-brain/workspace/usbcamera && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera /home/hi-brain/workspace/usbcamera/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

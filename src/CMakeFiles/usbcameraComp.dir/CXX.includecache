@@ -6,9 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/hi-brain/sample/usbcamera/src/usbcamera.cpp
+/home/hi-brain/workspace/usbcamera/src/hi_conversion.cpp
+hi_conversion.h
+/home/hi-brain/workspace/usbcamera/src/hi_conversion.h
+
+/home/hi-brain/workspace/usbcamera/src/usbcamera.cpp
 usbcamera.h
-/home/hi-brain/sample/usbcamera/src/usbcamera.h
+/home/hi-brain/workspace/usbcamera/src/usbcamera.h
+
+/home/hi-brain/workspace/usbcamera/src/usbcameraComp.cpp
+rtm/Manager.h
+-
+iostream
+-
+string
+-
+stdlib.h
+-
+usbcamera.h
+/home/hi-brain/workspace/usbcamera/src/usbcamera.h
 
 /usr/include/coil-1.1/coil/Condition.h
 pthread.h
@@ -802,27 +818,23 @@ rtm/idl/SDOPackage-cpp-stubs.h
 rtm/idl/SDOPackage.h
 /usr/include/openrtm-1.1/rtm/idl/rtm/idl/SDOPackage.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mat.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mat.h
 stdio.h
 -
 matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
+stdlib.h
+-
 stddef.h
 -
 tmwtypes.h
--
-stddef.h
--
-stdlib.h
--
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/tmwtypes.h
 assert.h
 -
-stdlib.h
--
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclbase.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclbase.h
 stdarg.h
 -
 string.h
@@ -830,13 +842,13 @@ string.h
 wchar.h
 -
 tmwtypes.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/tmwtypes.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/tmwtypes.h
 string.h
 -
 matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclcppclass.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclcppclass.h
 string
 -
 exception
@@ -844,13 +856,13 @@ exception
 iostream
 -
 mclmcr.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclmcr.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclmcr.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclmcr.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclmcr.h
 stddef.h
 -
 mclbase.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclbase.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclbase.h
 stdarg.h
 -
 stdint.h
@@ -862,37 +874,37 @@ inttypes.h
 inttypes.h
 -
 matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 iostream
 -
 exception
 -
+matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 stdarg.h
 -
 string.h
 -
 wchar.h
 -
-matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclmcrrt.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclmcrrt.h
 windows.h
 -
 stdint.h
 -
 mat.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mat.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mat.h
 mclbase.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclbase.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclbase.h
 mclmcr.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/mclmcr.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/mclmcr.h
 matrix.h
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/matrix.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/matrix.h
 
-/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include/tmwtypes.h
+/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include/tmwtypes.h
 limits.h
 -
 stdbool.h
@@ -902,31 +914,33 @@ float.h
 stddef.h
 -
 
-/usr/local/opencv2.4.5/include/opencv2/calib3d/calib3d.hpp
+/usr/local/opencv2.4.10/include/opencv2/calib3d/calib3d.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/calib3d/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/calib3d/opencv2/core/core.hpp
 opencv2/features2d/features2d.hpp
-/usr/local/opencv2.4.5/include/opencv2/calib3d/opencv2/features2d/features2d.hpp
+/usr/local/opencv2.4.10/include/opencv2/calib3d/opencv2/features2d/features2d.hpp
+opencv2/core/affine.hpp
+/usr/local/opencv2.4.10/include/opencv2/calib3d/opencv2/core/affine.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/contrib/contrib.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/contrib.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/imgproc/imgproc.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/imgproc/imgproc.hpp
 opencv2/features2d/features2d.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/features2d/features2d.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/features2d/features2d.hpp
 opencv2/objdetect/objdetect.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/objdetect/objdetect.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/objdetect/objdetect.hpp
 opencv2/contrib/retina.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/contrib/retina.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/contrib/retina.hpp
 opencv2/contrib/openfabmap.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/contrib/openfabmap.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/contrib/openfabmap.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/contrib/openfabmap.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/openfabmap.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/core/core.hpp
 opencv2/features2d/features2d.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/features2d/features2d.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/features2d/features2d.hpp
 vector
 -
 list
@@ -938,17 +952,21 @@ set
 valarray
 -
 
-/usr/local/opencv2.4.5/include/opencv2/contrib/retina.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/retina.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/contrib/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/contrib/opencv2/core/core.hpp
 valarray
 -
 
-/usr/local/opencv2.4.5/include/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/affine.hpp
+opencv2/core/core.hpp
+-
+
+/usr/local/opencv2.4.10/include/opencv2/core/core.hpp
 opencv2/core/types_c.h
-/usr/local/opencv2.4.5/include/opencv2/core/opencv2/core/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/core/opencv2/core/types_c.h
 opencv2/core/version.hpp
-/usr/local/opencv2.4.5/include/opencv2/core/opencv2/core/version.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/opencv2/core/version.hpp
 limits.h
 -
 algorithm
@@ -970,21 +988,21 @@ vector
 sstream
 -
 opencv2/core/operations.hpp
-/usr/local/opencv2.4.5/include/opencv2/core/opencv2/core/operations.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/opencv2/core/operations.hpp
 opencv2/core/mat.hpp
-/usr/local/opencv2.4.5/include/opencv2/core/opencv2/core/mat.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/opencv2/core/mat.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/core/core_c.h
 opencv2/core/types_c.h
-/usr/local/opencv2.4.5/include/opencv2/core/opencv2/core/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/core/opencv2/core/types_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/core/mat.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/mat.hpp
 limits.h
 -
 string.h
 -
 
-/usr/local/opencv2.4.5/include/opencv2/core/operations.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/operations.hpp
 string.h
 -
 limits.h
@@ -996,7 +1014,7 @@ bits/atomicity.h
 limits
 -
 
-/usr/local/opencv2.4.5/include/opencv2/core/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/core/types_c.h
 assert.h
 -
 stdlib.h
@@ -1020,61 +1038,61 @@ ipl.h
 ipl/ipl.h
 -
 tegra_round.hpp
-/usr/local/opencv2.4.5/include/opencv2/core/tegra_round.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/tegra_round.hpp
 emmintrin.h
-/usr/local/opencv2.4.5/include/opencv2/core/emmintrin.h
+/usr/local/opencv2.4.10/include/opencv2/core/emmintrin.h
 
-/usr/local/opencv2.4.5/include/opencv2/core/version.hpp
+/usr/local/opencv2.4.10/include/opencv2/core/version.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/features2d/features2d.hpp
+/usr/local/opencv2.4.10/include/opencv2/features2d/features2d.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/features2d/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/features2d/opencv2/core/core.hpp
 opencv2/flann/miniflann.hpp
-/usr/local/opencv2.4.5/include/opencv2/features2d/opencv2/flann/miniflann.hpp
+/usr/local/opencv2.4.10/include/opencv2/features2d/opencv2/flann/miniflann.hpp
 limits
 -
 
-/usr/local/opencv2.4.5/include/opencv2/flann/config.h
+/usr/local/opencv2.4.10/include/opencv2/flann/config.h
 
-/usr/local/opencv2.4.5/include/opencv2/flann/defines.h
+/usr/local/opencv2.4.10/include/opencv2/flann/defines.h
 config.h
-/usr/local/opencv2.4.5/include/opencv2/flann/config.h
+/usr/local/opencv2.4.10/include/opencv2/flann/config.h
 
-/usr/local/opencv2.4.5/include/opencv2/flann/miniflann.hpp
+/usr/local/opencv2.4.10/include/opencv2/flann/miniflann.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/flann/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/flann/opencv2/core/core.hpp
 opencv2/flann/defines.h
-/usr/local/opencv2.4.5/include/opencv2/flann/opencv2/flann/defines.h
+/usr/local/opencv2.4.10/include/opencv2/flann/opencv2/flann/defines.h
 
-/usr/local/opencv2.4.5/include/opencv2/highgui/highgui.hpp
+/usr/local/opencv2.4.10/include/opencv2/highgui/highgui.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/highgui/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/highgui/opencv2/core/core.hpp
 opencv2/highgui/highgui_c.h
-/usr/local/opencv2.4.5/include/opencv2/highgui/opencv2/highgui/highgui_c.h
+/usr/local/opencv2.4.10/include/opencv2/highgui/opencv2/highgui/highgui_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/highgui/highgui_c.h
+/usr/local/opencv2.4.10/include/opencv2/highgui/highgui_c.h
 opencv2/core/core_c.h
-/usr/local/opencv2.4.5/include/opencv2/highgui/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/highgui/opencv2/core/core_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/imgproc/imgproc.hpp
+/usr/local/opencv2.4.10/include/opencv2/imgproc/imgproc.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/imgproc/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/imgproc/opencv2/core/core.hpp
 opencv2/imgproc/types_c.h
-/usr/local/opencv2.4.5/include/opencv2/imgproc/opencv2/imgproc/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/opencv2/imgproc/types_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/imgproc/imgproc_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/imgproc_c.h
 opencv2/core/core_c.h
-/usr/local/opencv2.4.5/include/opencv2/imgproc/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/opencv2/core/core_c.h
 opencv2/imgproc/types_c.h
-/usr/local/opencv2.4.5/include/opencv2/imgproc/opencv2/imgproc/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/opencv2/imgproc/types_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/imgproc/types_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/types_c.h
 opencv2/core/core_c.h
-/usr/local/opencv2.4.5/include/opencv2/imgproc/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/imgproc/opencv2/core/core_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/ml/ml.hpp
+/usr/local/opencv2.4.10/include/opencv2/ml/ml.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/ml/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/ml/opencv2/core/core.hpp
 limits.h
 -
 map
@@ -1084,73 +1102,73 @@ string
 iostream
 -
 
-/usr/local/opencv2.4.5/include/opencv2/objdetect/objdetect.hpp
+/usr/local/opencv2.4.10/include/opencv2/objdetect/objdetect.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/objdetect/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/objdetect/opencv2/core/core.hpp
 map
 -
 deque
 -
 
-/usr/local/opencv2.4.5/include/opencv2/opencv.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv.hpp
 opencv2/core/core_c.h
-/usr/local/opencv2.4.5/include/opencv2/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/opencv2/core/core_c.h
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/core/core.hpp
 opencv2/flann/miniflann.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/flann/miniflann.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/flann/miniflann.hpp
 opencv2/imgproc/imgproc_c.h
-/usr/local/opencv2.4.5/include/opencv2/opencv2/imgproc/imgproc_c.h
+/usr/local/opencv2.4.10/include/opencv2/opencv2/imgproc/imgproc_c.h
 opencv2/imgproc/imgproc.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/imgproc/imgproc.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/imgproc/imgproc.hpp
 opencv2/photo/photo.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/photo/photo.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/photo/photo.hpp
 opencv2/video/video.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/video/video.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/video/video.hpp
 opencv2/features2d/features2d.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/features2d/features2d.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/features2d/features2d.hpp
 opencv2/objdetect/objdetect.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/objdetect/objdetect.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/objdetect/objdetect.hpp
 opencv2/calib3d/calib3d.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/calib3d/calib3d.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/calib3d/calib3d.hpp
 opencv2/ml/ml.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/ml/ml.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/ml/ml.hpp
 opencv2/highgui/highgui_c.h
-/usr/local/opencv2.4.5/include/opencv2/opencv2/highgui/highgui_c.h
+/usr/local/opencv2.4.10/include/opencv2/opencv2/highgui/highgui_c.h
 opencv2/highgui/highgui.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/highgui/highgui.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/highgui/highgui.hpp
 opencv2/contrib/contrib.hpp
-/usr/local/opencv2.4.5/include/opencv2/opencv2/contrib/contrib.hpp
+/usr/local/opencv2.4.10/include/opencv2/opencv2/contrib/contrib.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/photo/photo.hpp
+/usr/local/opencv2.4.10/include/opencv2/photo/photo.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/photo/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/photo/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/usr/local/opencv2.4.5/include/opencv2/photo/opencv2/imgproc/imgproc.hpp
+/usr/local/opencv2.4.10/include/opencv2/photo/opencv2/imgproc/imgproc.hpp
 opencv2/photo/photo_c.h
-/usr/local/opencv2.4.5/include/opencv2/photo/opencv2/photo/photo_c.h
+/usr/local/opencv2.4.10/include/opencv2/photo/opencv2/photo/photo_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/photo/photo_c.h
+/usr/local/opencv2.4.10/include/opencv2/photo/photo_c.h
 opencv2/core/core_c.h
-/usr/local/opencv2.4.5/include/opencv2/photo/opencv2/core/core_c.h
+/usr/local/opencv2.4.10/include/opencv2/photo/opencv2/core/core_c.h
 
-/usr/local/opencv2.4.5/include/opencv2/video/background_segm.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/background_segm.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/video/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/opencv2/core/core.hpp
 list
 -
 
-/usr/local/opencv2.4.5/include/opencv2/video/tracking.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/tracking.hpp
 opencv2/core/core.hpp
-/usr/local/opencv2.4.5/include/opencv2/video/opencv2/core/core.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/usr/local/opencv2.4.5/include/opencv2/video/opencv2/imgproc/imgproc.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/opencv2/imgproc/imgproc.hpp
 
-/usr/local/opencv2.4.5/include/opencv2/video/video.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/video.hpp
 opencv2/video/tracking.hpp
-/usr/local/opencv2.4.5/include/opencv2/video/opencv2/video/tracking.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/opencv2/video/tracking.hpp
 opencv2/video/background_segm.hpp
-/usr/local/opencv2.4.5/include/opencv2/video/opencv2/video/background_segm.hpp
+/usr/local/opencv2.4.10/include/opencv2/video/opencv2/video/background_segm.hpp
 
 include/usbcamera/hi_conversion.h
 rtm/Manager.h

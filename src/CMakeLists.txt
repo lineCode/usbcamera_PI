@@ -2,8 +2,8 @@ set(comp_srcs usbcamera.cpp hi_conversion.cpp)
 set(standalone_srcs usbcameraComp.cpp)
 
 #hi
-set(MATLAB_INCLUDE_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/extern/include;") #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")
-set(MATLAB_LIBRARY_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/runtime/glnxa64;" "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v81/bin/glnxa64;")
+set(MATLAB_INCLUDE_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/extern/include;") #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")
+set(MATLAB_LIBRARY_DIRS "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/runtime/glnxa64;" "/usr/local/MATLAB/MATLAB_Compiler_Runtime/v84/bin/glnxa64;")
  #"${PROJECT_SOURCE_DIR}/MATLAB_DIR;")
 set(matlib libmwmclmcrrt.so)
 if (DEFINED MATLAB_INCLUDE_DIRS)

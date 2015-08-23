@@ -1,4 +1,4 @@
-# Install script for directory: /home/hi-brain/sample/usbcamera/include/usbcamera
+# Install script for directory: /home/hi-brain/workspace/usbcamera/include/usbcamera
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
